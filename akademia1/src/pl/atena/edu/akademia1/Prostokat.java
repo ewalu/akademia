@@ -33,7 +33,55 @@ public class Prostokat {
 		return true;
 	}
 	
+	public static String miesiac (int liczba) {
+		String tekst = "niepoprawny miesi¹c";
+		switch(liczba) {
+		case 1:
+			tekst = "Styczeñ";
+			break;
+		case 2:
+			tekst = "Luty";
+			break;
+		case 3:
+			tekst = "Marzec";
+			break;
+		case 4:
+			tekst = "Kwiecieñ";
+			break;
+		case 5:
+			tekst = "Maj";
+			break;
+		case 6:
+			tekst = "Czerwiec";
+			break;
+		case 7:
+			tekst = "Lipiec";
+			break;
+		case 8:
+			tekst = "Sierpieñ";
+			break;
+		case 9:
+			tekst = "Wrzesieñ";
+			break;
+		case 10:
+			tekst = "Pa¿dziernik";
+			break;
+		case 11:
+			tekst = "Listopad";
+			break;
+		case 12:
+			tekst = "Grudzieñ";
+			break;
+		}
+		return tekst;
+		
+	}
+	
 	public static void main(String[] args) {
+		
+		String jakimiesiac = miesiac(11);
+		System.out.println(jakimiesiac);
+		
 		
 		System.out.println("Podaj d³ugoœæ boku a:");
 		String sa = scanner.nextLine();
@@ -58,6 +106,7 @@ public class Prostokat {
 			double pole = a*b;
 			System.out.println("Pole = "+pole);
 		}
+		
 
 	}
 
