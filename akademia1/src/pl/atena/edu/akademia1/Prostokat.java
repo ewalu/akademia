@@ -36,7 +36,7 @@ public class Prostokat {
 	public static String miesiac (int liczba) {
 		String tekst = "niepoprawny miesi¹c";
 		if (liczba < 1 || liczba > 12) {
-			return tekst;
+			return "niepoprawny miesi¹c";
 		}
 		switch(liczba) {
 		case 1:
@@ -82,7 +82,10 @@ public class Prostokat {
 	
 	public static void main(String[] args) {
 		
-		String jakimiesiac = miesiac(11);
+		System.out.println("Podaj miesi¹c:");
+		String smsc = scanner.nextLine();
+		int msc = Integer.valueOf(smsc);
+		String jakimiesiac = miesiac(msc);
 		System.out.println(jakimiesiac);
 		
 		
