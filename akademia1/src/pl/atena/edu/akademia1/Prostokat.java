@@ -35,6 +35,9 @@ public class Prostokat {
 	
 	public static String miesiac (int liczba) {
 		String tekst = "niepoprawny miesi¹c";
+		if (liczba < 1 || liczba > 12) {
+			return tekst;
+		}
 		switch(liczba) {
 		case 1:
 			tekst = "Styczeñ";
