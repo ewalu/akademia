@@ -18,7 +18,7 @@ public class NumberSystems {
 	
 	public static boolean odwrotnosc (int liczba) {
 		if (liczba == 0) {
-			System.out.println("Nie mo¿na wyznaczyæ odwrotnoœci 0.");
+			System.out.println("Nie mo¿na wyznaczyæ odwrotnoœci 0..");
 			return true;
 		}
 		String numb41 = Double.toHexString(liczba);
