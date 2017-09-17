@@ -32,7 +32,7 @@ public class WitajSwiecie {
 		for (byte i = 0; i < znaki.length ; i++) {
 			System.out.println(znaki[i]);
 		}
-		System.out.println("\n\n\n");
+		System.out.println("\n\n\n\n");
 		System.out.println("Witaj");
 		System.out.println(znak);
 		System.out.println((new Random()).nextInt());
