@@ -12,6 +12,7 @@ public class Zadanie2tablice {
 			System.out.printf("dane[%d] = %d\n", i , tablica[i]);
 			
 		}
+		//Arrays.sort(tablica);
 		System.out.println(Arrays.toString(tablica));
 	}
 
