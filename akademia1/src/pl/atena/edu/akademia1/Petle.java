@@ -27,6 +27,12 @@ public class Petle {
 		} while (los != liczb);
 		
 		System.out.printf("Osi¹gniêto %d w %d", liczb, iteracje);
+		System.out.println();
+		
+		for (char i = 65; i < 91; i++) {
+			System.out.print(i+" ");
+			
+		}
 
 	}
 
