@@ -14,9 +14,9 @@ public class Tabliczka {
 			}
 			System.out.println();
 		}
-		
-		for (int i = 0; i<=10; i++) {
-			for (int j = 0; j<=10; j++) {
+		System.out.println();
+		for (int i = 0; i<=6; i++) {
+			for (int j = 0; j<=6; j++) {
 				if (i==0) {
 				System.out.printf("%4d", j);
 			} else if (j==0) {
