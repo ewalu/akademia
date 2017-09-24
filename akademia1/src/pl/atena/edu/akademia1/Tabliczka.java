@@ -23,11 +23,9 @@ public class Tabliczka {
 				System.out.printf("%4d", i);
 			} else {
 				System.out.printf("%4d", i*j);
+				}
 			}
-		}
 			System.out.println();
-
+		}
 	}
-	}
-
 }
