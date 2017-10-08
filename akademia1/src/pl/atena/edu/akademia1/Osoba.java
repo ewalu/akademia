@@ -6,6 +6,7 @@ public class Osoba {
 	private String nazwisko;
 	private int wiek;
 	private int wzrost;
+	private int piwo;
 	private Zwierze zwierze;
 	
 	public static class Zwierze {
@@ -39,12 +40,14 @@ public class Osoba {
 	}
 	//konstruktory
 	public Osoba() {
-		System.out.println("Jestem");
+		System.out.println("Jestem osoba");
 	}
 	
 	public Osoba(int wiek) {
 		this.wiek = wiek;
+		this.piwo = 0;
 	}
+	
 	
 	public Osoba(int wiek, int wzrost) {
 		this(wiek); //wywo³uje powy¿szy konstruktor
