@@ -6,7 +6,37 @@ public class Osoba {
 	private String nazwisko;
 	private int wiek;
 	private int wzrost;
+	private Zwierze zwierze;
 	
+	public static class Zwierze {
+		private String gatunek;
+		private String imie;
+		public Zwierze (String gatunek) {
+			this.gatunek = gatunek;
+		}
+		
+		public Zwierze (String gatunek, String imie) {
+			this(gatunek);
+			this.imie = imie;
+		}
+		
+		public String toString() {
+			return String.format("Zwierze [gatnek=%s, imie=%s]", gatunek, imie);
+		}
+	}
+	
+	public void dodajZwierze(String gatunek) {
+		zwierze = new Zwierze(gatunek);
+	}
+	
+	public void dodajZwierze(String gatunek, String imie) {
+		zwierze = new Zwierze(gatunek, imie);
+	}
+	
+	public void wyswietlZwierze() {
+		System.out.print(this+" posiada ");
+		System.out.println(zwierze);
+	}
 	//konstruktory
 	public Osoba() {
 		System.out.println("Jestem");

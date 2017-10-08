@@ -1,5 +1,7 @@
 package pl.atena.edu.akademia1;
 
+import sun.misc.FileURLMapper;
+
 public class Obiekty {
 
 	public static void main(String[] args) {
@@ -10,13 +12,15 @@ public class Obiekty {
 		Osoba osoba5 = Osoba.instance("Jan");
 		
 		osoba5.dodajLat(3);
+		osoba5.dodajZwierze("kot","dupek");
+		osoba5.wyswietlZwierze();
 		
 		System.out.println(osoba1);
 		System.out.println(osoba2);
 		System.out.println(osoba3);
 		System.out.println(osoba4);
 		System.out.println(osoba5);
-		
+		System.out.println(osoba5);
 		System.out.println(osoba2.pelnoletni());
 
 	}
