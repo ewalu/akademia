@@ -48,6 +48,42 @@ public class Osoba {
 		return String.format("Osoba [imie=%s, nazwisko=%s, wiek=%s, wzrost=%s]", imie, nazwisko, wiek, wzrost);
 	}
 
+	public String getImie() {
+		return imie;
+	}
+
+	public void setImie(String imie) {
+		this.imie = imie;
+	}
+
+	public String getNazwisko() {
+		return nazwisko;
+	}
+
+	public void setNazwisko(String nazwisko) {
+		this.nazwisko = nazwisko;
+	}
+
+	public int getWiek() {
+		return wiek;
+	}
+
+	public void setWiek(int wiek) {
+		this.wiek = wiek;
+	}
+
+	public int getWzrost() {
+		return wzrost;
+	}
+
+	public void setWzrost(int wzrost) {
+		this.wzrost = wzrost;
+	}
+
+	public static int getPelnoletnosc() {
+		return PELNOLETNOSC;
+	}
+
 
 	
 	
